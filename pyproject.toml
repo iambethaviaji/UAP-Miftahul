@@ -1,0 +1,18 @@
+[project]
+name = "Ujian_Akhir-_Praktikum"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "MiftahulPtr", email = "miftahulptral@gmail.com"},
+]
+dependencies = ["joblib>=1.4.2", "streamlit>=1.41.1", "scikit-learn>=1.6.0"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+start = "streamlit run ./src/app.py"
