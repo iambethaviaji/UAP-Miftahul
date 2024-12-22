@@ -7,7 +7,7 @@ Tujuan dari pembuatan proyek ini adalah untuk mengembangkan sistem yang dapat me
 
 ---
 
-## 🔧 **Preprocessing**
+## 🔧 **PREPROCESSING**
 Proses preprocessing bertujuan untuk mempersiapkan dataset gambar agar siap digunakan dalam pelatihan model machine learning. Tahapan preprocessing meliputi:
 1. **Resize**: Gambar diubah ukurannya menjadi 224x224 piksel.
 2. **Normalization**: Nilai piksel dinormalisasi untuk mempercepat konvergensi model.
@@ -20,7 +20,7 @@ Dataset dibagi menjadi tiga set utama:
 
 ---
 
-## 🧠 **Model yang Digunakan**
+## 🧠 **MODEL**
 
 ### **1. InceptionV3**
 ![InceptionV3 Architecture](assets/Gambar%20Arsitektur%20InceptionV3.png)
@@ -38,7 +38,7 @@ Dataset dibagi menjadi tiga set utama:
 
 ---
 
-## 📃 **Dependensi & Langkah Instalasi**
+## 📃 **DEPENDENSI & LANGKAH INSTALASI**
 
 ### **Dependensi yang Dibutuhkan**
 - `tensorflow>=2.18.0`
@@ -78,7 +78,7 @@ Dataset dibagi menjadi tiga set utama:
 
 ---
 
-## 📊 **Evaluasi Model**
+## 📊 **EVALUASI MODEL**
 
 ### Evaluasi Model: InceptionV3
 
@@ -122,11 +122,14 @@ Secara spesifik, model menunjukkan kinerja yang sangat baik pada setiap kelas. M
 
 ---
 
-## 🌐 **Local Deployment**
+## 🌐 **LOCAL DEPLOYMENT**
 Aplikasi ini dilengkapi dengan antarmuka lokal untuk memprediksi jenis ikan berdasarkan input gambar.  
 **Tampilan Utama**:
-1. Input gambar ikan.
-2. Hasil prediksi jenis ikan ditampilkan.
+![Homepage](assets/Home%20Page.png)
+**Input gambar ikan**:
+![Home Upload](assets/Home%20+%20Upload.png)
+**Hasil prediksi jenis ikan ditampilkan**:
+![Home Prediksi](assets/Home%20Page.png)
 
 ---
 
