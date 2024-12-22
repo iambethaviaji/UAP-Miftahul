@@ -133,7 +133,6 @@ Aplikasi ini dilengkapi dengan antarmuka lokal untuk memprediksi jenis ikan berd
 
 ---
 
-## 🚀 **Cara Menjalankan**
-1. Clone repositori ini:
-   ```bash
-   git clone https://github.com/miftahulputra/UAP_MACHINE_LEARNING.git
+## 👨‍💻 **AUTHOR**
+[MiftahulPutra](https://www.linkedin.com/in/miftahulputraandiko)
+
