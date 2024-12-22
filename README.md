@@ -127,9 +127,9 @@ Aplikasi ini dilengkapi dengan antarmuka lokal untuk memprediksi jenis ikan berd
 **Tampilan Utama**:
 ![Homepage](assets/Home%20Page.png)
 **Input gambar ikan**:
-![Home Upload](assets/Home%20+%20Upload.png)
+![Home Upload](assets/Homepage%20+%20Upload.png)
 **Hasil prediksi jenis ikan ditampilkan**:
-![Home Prediksi](assets/Home%20Page.png)
+![Home Prediksi](assets/Hasil%20Prediksi.png)
 
 ---
 
