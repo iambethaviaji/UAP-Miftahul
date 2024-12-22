@@ -83,7 +83,7 @@ Dataset dibagi menjadi tiga set utama:
 ### Evaluasi Model: InceptionV3
 
 #### Hasil Grafik Pelatihan
-![Grafik Akurasi Pelatihan dan Validasi InceptionV3](assets/Grafi%20InceptionV3.png)
+![Grafik Akurasi Pelatihan dan Validasi InceptionV3](assets/Grafik%20InceptionV3.png)
 
 Pada proses pelatihan model menggunakan InceptionV3, dimulai dengan menggunakan model yang telah dilatih sebelumnya (pre-trained model) dan melakukan fine-tuning pada dataset khusus. Selama pelatihan, model mengalami peningkatan performa yang signifikan seiring berjalannya waktu. Pada epoch pertama, akurasi model pada data pelatihan tercatat sekitar 35.72%, sementara pada data validasi, akurasi mencapai 90.50%. Meskipun akurasi pada data pelatihan masih rendah, model telah menunjukkan kemampuan yang sangat baik untuk memprediksi data yang belum pernah dilihat sebelumnya (data validasi). Seiring berjalannya pelatihan, akurasi pada data pelatihan terus meningkat, mencapai sekitar 87.47% pada epoch ke-20. Pada saat yang sama, model menunjukkan kinerja yang sangat baik pada data validasi, dengan akurasi mencapai 99.00%. Hal ini menunjukkan bahwa model tidak hanya belajar dari data pelatihan, tetapi juga mampu menggeneralisasi dengan sangat baik terhadap data yang belum pernah dilihat sebelumnya. Meskipun terdapat beberapa fluktuasi kecil dalam nilai akurasi dan loss di antara epoch-epoch tertentu, secara keseluruhan, model mengalami peningkatan yang konsisten.
 
