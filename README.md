@@ -104,19 +104,19 @@ Kelas "Striped Red Mullet" menunjukkan sedikit penurunan performa dengan 3 sampe
 ### Evaluasi Model: MobileNetV2
 
 #### Hasil Grafik Pelatihan
-Grafik pelatihan untuk model MobileNetV2 disimpan dengan nama file `Grafik Mobilenetv2` di dalam folder `assets`.
+![Hasil Grafik Pelatihan MobileNetv2](assets/Grafik%20Mobilenetv2.png)
 
 Pada proses pelatihan model dengan MobileNetV2, model memulai dengan performa yang moderat pada epoch pertama, dengan akurasi pelatihan sekitar 38.92% dan akurasi validasi mencapai 96.67%. Hal ini menunjukkan bahwa meskipun model mulai belajar, ia sudah mampu memprediksi data validasi dengan cukup baik sejak awal. Pada epoch kedua, akurasi pelatihan meningkat pesat menjadi 71.33%, dan akurasi validasi terus meningkat menjadi 97.94%. Peningkatan ini berlanjut stabil sepanjang proses pelatihan.
 Pada epoch ke-5, model menunjukkan akurasi pelatihan sebesar 82.26% dengan akurasi validasi yang masih tinggi, yaitu 98.28%. Puncaknya terjadi pada epoch ke-12, di mana akurasi pelatihan mencapai 87.09% dan akurasi validasi tercatat pada 99.39%. Meskipun ada beberapa fluktuasi kecil pada akurasi dan loss di beberapa epoch berikutnya, model tetap menunjukkan kemampuan generalisasi yang sangat baik pada data validasi. Pada akhir pelatihan (epoch ke-20), akurasi pelatihan mencapai 87.59% dengan akurasi validasi yang stabil di 99.33%. Secara keseluruhan, meskipun terdapat fluktuasi minor, model menunjukkan peningkatan yang konsisten dalam hal akurasi pelatihan dan validasi.
 
 #### Hasil Classification Report
-Hasil classification report untuk MobileNetV2 disimpan dengan nama file `Classi MobileNetv2` di dalam folder `assets`.
+![Hasil Classification Report MobileNetv2](assets/Classi%20MobileNetv2.png)
 
 Hasil dari classification report menunjukkan bahwa model klasifikasi memiliki kinerja yang sangat baik pada dataset yang diuji. Sebagian besar kelas menunjukkan precision, recall, dan f1-score yang mendekati 1.00, menunjukkan prediksi yang sangat akurat dan kemampuan model untuk mendeteksi kelas dengan baik. Kelas seperti "Black Sea Sprat", "Shrimp", dan "Trout" memiliki skor 1.00 pada ketiga metrik, sementara kelas lainnya, seperti "Gilt-Head Bream", "Horse Mackerel", dan "Red Sea Bream", juga menunjukkan performa yang sangat baik dengan skor hampir 1.00 di semua metrik.
 Meskipun sebagian besar kelas memiliki hasil yang luar biasa, ada beberapa kelas yang sedikit menurun pada recall, seperti pada "Sea Bass" dengan skor 0.97, dan "Striped Red Mullet" dengan skor 0.94, meskipun precision dan f1-score tetap tinggi. Secara keseluruhan, model ini mencapai akurasi 99% pada dataset pengujian, yang menunjukkan kemampuan model untuk membedakan kelas-kelas dengan sangat baik.
 
 #### Hasil Confusion Matrix
-Hasil confusion matrix untuk MobileNetV2 disimpan dengan nama file `Classif MobileNetv2` di dalam folder `assets`.
+![Hasil Confussion Matrix MobileNetv2](assets/Classif%20MobileNetv2.png)
 
 Secara spesifik, model menunjukkan kinerja yang sangat baik pada setiap kelas. Misalnya, untuk kelas "Black Sea Sprat" dan "Gilt-Head Bream", model berhasil mengklasifikasikan 99 dari 100 sampel dengan benar, dengan hanya 1 kesalahan pada setiap kelas. Kelas lain seperti "Hourse Mackerel", "Red Sea Bream", "Shrimp", "Trout", dan "Striped Red Mullet" juga menunjukkan hasil yang sangat baik, dengan hampir semua sampel diklasifikasikan dengan benar. Namun, kelas "Sea Bass" memiliki sedikit lebih banyak kesalahan, dengan 3 misclassifications, yaitu 2 sebagai "Black Sea Sprat" dan 1 sebagai "Shrimp". Meskipun demikian, kesalahan ini tidak mengurangi kinerja keseluruhan model yang masih sangat efektif dalam membedakan setiap kelas dengan akurasi yang tinggi.
 
