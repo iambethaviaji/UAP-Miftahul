@@ -22,12 +22,14 @@ Dataset dibagi menjadi tiga set utama:
 
 ## 🧠 **Model yang Digunakan**
 ### **1. InceptionV3**
+![InceptionV3 Architecture](assets/Gambar%20Arsitektur%20InceptionV3.png)
 - Model ini di-fine-tuning dengan dataset ikan untuk tugas klasifikasi.
 - **Hasil pelatihan**:
   - Akurasi pelatihan: **87.47%** (epoch ke-20)
   - Akurasi validasi: **99.00%**
 
 ### **2. MobileNetV2**
+![MobileNetV2 Architecture](assets/MobileNetv2.png)
 - Model yang lebih ringan untuk kebutuhan real-time.
 - **Hasil pelatihan**:
   - Akurasi pelatihan: **87.59%** (epoch ke-20)
