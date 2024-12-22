@@ -46,7 +46,7 @@ Dataset dibagi menjadi tiga set utama:
 - `scikit-learn>=1.6.0`
 - `streamlit>=1.41.1`
 
-#### Langkah Instalasi TensorFlow Menggunakan PDM
+### Langkah Instalasi TensorFlow Menggunakan PDM
 1. **Pastikan berada di dalam direktori virtual environment `.venv`:**
     ```bash
     pdm info
@@ -69,7 +69,7 @@ Dataset dibagi menjadi tiga set utama:
 - `app.py`: Berkas aplikasi utama yang berisi rute dan fungsi.
 - `klasifikasi_citra.py`: Berkas penerapan dari model untuk klasifikasi dan tampilan antarmuka web.
 
-#### Menjalankan Aplikasi
+### Menjalankan Aplikasi
 - Jalankan aplikasi dengan perintah berikut:
     ```bash
     streamlit run ./src/app.py
