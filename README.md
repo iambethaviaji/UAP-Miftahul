@@ -23,22 +23,18 @@ Dataset dibagi menjadi tiga set utama:
 ## 🧠 **Model yang Digunakan**
 
 ### **1. InceptionV3**
+![InceptionV3 Architecture](assets/Gambar%20Arsitektur%20InceptionV3.png)
 - **Pengertian Umum**: InceptionV3 adalah salah satu model deep learning yang populer untuk tugas klasifikasi citra. Model ini dirancang dengan arsitektur mendalam yang menggunakan modul Inception untuk menangkap informasi visual dengan efisien melalui berbagai ukuran filter. InceptionV3 dioptimalkan untuk memberikan akurasi tinggi pada dataset besar sambil tetap menjaga efisiensi komputasi.
 - **Hasil Pelatihan**:
   - Akurasi pelatihan: **87.47%** (epoch ke-20)
   - Akurasi validasi: **99.00%**
 
-![InceptionV3 Architecture](assets/Gambar%20Arsitektur%20InceptionV3.png)
-
----
-
 ### **2. MobileNetV2**
+![MobileNetV2 Architecture](assets/MobileNetv2.png)
 - **Pengertian Umum**: MobileNetV2 adalah model deep learning yang dirancang untuk perangkat dengan daya komputasi rendah, seperti ponsel dan perangkat IoT. Model ini menggunakan blok inverted residuals dan depthwise separable convolution untuk meningkatkan efisiensi tanpa mengorbankan akurasi. MobileNetV2 sangat cocok untuk aplikasi real-time dengan latensi rendah.
 - **Hasil Pelatihan**:
   - Akurasi pelatihan: **87.59%** (epoch ke-20)
   - Akurasi validasi: **99.33%**
-
-![MobileNetV2 Architecture](assets/MobileNetv2.png)
 
 ---
 
