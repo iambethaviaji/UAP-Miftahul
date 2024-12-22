@@ -38,6 +38,36 @@ Dataset dibagi menjadi tiga set utama:
 
 ---
 
+## 📃 **Dependensi & Langkah Instalasi**
+
+# Dependensi yang dibutuhkan
+dependencies = ["tensorflow>=2.18.0", "joblib>=1.4.2", "scikit-learn>=1.6.0", "streamlit>=1.41.1"]
+
+# Langkah instalasi tensorflow menggunakan pdm
+
+# 1. Pastikan berada di dalam direktori virtual environment `.venv`
+pdm info
+
+# 2. Periksa apakah tensorflow sudah terinstal dalam virtual environment
+pdm run python -m pip show tensorflow
+
+# 3. Jika belum terinstal, jalankan perintah berikut untuk menginstal tensorflow
+pdm run python -m ensurepip --upgrade
+pdm run python -m pip install tensorflow
+
+# 4. Verifikasi instalasi dengan memeriksa versi tensorflow
+pdm run python -c "import tensorflow as tf; print(tf.version)"
+
+# Struktur file proyek
+- app.py: Berkas aplikasi utama yang berisi rute dan fungsi.
+- klasifikasi_citra.py: Berkas penerapan dari model untuk klasifikasi dan tampilan antarmuka web.
+
+# Menjalankan APP
+- streamlit run ./src/app.py
+- Akses aplikasi melalui peramban web dengan alamat: http://localhost:8501/
+
+---
+
 ## 📊 **Evaluasi Model**
 ### **1. Hasil Grafik Pelatihan**
 **InceptionV3**: Akurasi model meningkat secara konsisten dari 35.72% (epoch pertama) hingga 87.47% (epoch ke-20) dengan akurasi validasi mencapai 99.00%.  
