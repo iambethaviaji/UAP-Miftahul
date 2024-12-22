@@ -1,32 +1,9 @@
 # **KLASIFIKASI JENIS IKAN MENGGUNAKAN MODEL INCEPTIONV3 DAN MOBILENETV2**
 
-## 📖 **Deskripsi Proyek**
-Proyek ini bertujuan untuk mengembangkan sistem yang dapat mempermudah dan mempercepat proses identifikasi jenis ikan pada hasil tambak. Sistem ini diharapkan mampu meningkatkan efisiensi dan kualitas pengelolaan tambak dengan teknologi berbasis pengolahan citra. Tantangan dalam penyortiran ikan secara manual, terutama ketika terdapat beragam spesies, sering kali menyebabkan penurunan efisiensi dan kualitas produk. Dengan menggunakan teknologi ini, identifikasi ikan seperti:
-- Black Sea Sprat
-- Gilt-Head Bream
-- Horse Mackerel
-- Red Mullet
-- Red Sea Bream
-- Sea Bass
-- Shrimp
-- Striped Red Mullet
-- Trout  
-dapat dilakukan secara otomatis.
+## 📖 **OVERVIEW PROJECT**
+Tujuan dari pembuatan proyek ini adalah untuk mengembangkan sistem yang dapat mempermudah dan mempercepat proses identifikasi jenis ikan pada hasil tambak, guna meningkatkan efisiensi dan kualitas pengelolaan tambak secara keseluruhan. Pengelolaan hasil tambak sering menghadapi tantangan dalam menyortir jenis ikan secara cepat dan akurat, terutama ketika beragam spesies seperti Black Sea Sprat, Gilt-Head Bream, Horse Mackerel, Red Mullet, Red Sea Bream, Sea Bass, Shrimp, Striped Red Mullet, dan Trout harus diidentifikasi. Tantangan ini dapat menyebabkan penurunan efisiensi dan kualitas produk jika dilakukan secara manual. Untuk mengatasi masalah tersebut, teknologi berbasis pengolahan citra hadir sebagai solusi yang memungkinkan identifikasi dan penyortiran ikan secara otomatis. Teknologi ini tidak hanya meningkatkan efisiensi pengelolaan tambak, tetapi juga memastikan kualitas produk sesuai standar pasar, sekaligus mempermudah proses distribusi dan mendukung keberlanjutan usaha tambak.
 
-Teknologi ini tidak hanya meningkatkan efisiensi pengelolaan tambak tetapi juga memastikan kualitas produk sesuai standar pasar, mempermudah distribusi, dan mendukung keberlanjutan usaha tambak.
-
----
-
-## 📂 **Dataset**
-Dataset yang digunakan adalah **A Large Scale Fish Dataset**, yang terdiri atas **9.000 gambar** yang terbagi menjadi:
-- **70%** Training Set
-- **20%** Validation Set
-- **10%** Testing Set  
-
-Setiap set terdiri dari 9 label kelas:  
-Black Sea Sprat, Gilt-Head Bream, Horse Mackerel, Red Mullet, Red Sea Bream, Sea Bass, Shrimp, Striped Red Mullet, dan Trout.  
-
-**Link Dataset**: [A Large Scale Fish Dataset](https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset/data)
+📂 Link Dataset yang digunakan: [A Large Scale Fish Dataset](https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset/data). 
 
 ---
 
