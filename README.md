@@ -40,13 +40,13 @@ Dataset dibagi menjadi tiga set utama:
 
 ## 📃 **Dependensi & Langkah Instalasi**
 
-### Dependensi yang Dibutuhkan
+### **Dependensi yang Dibutuhkan**
 - `tensorflow>=2.18.0`
 - `joblib>=1.4.2`
 - `scikit-learn>=1.6.0`
 - `streamlit>=1.41.1`
 
-### Langkah Instalasi TensorFlow Menggunakan PDM
+### **Langkah Instalasi TensorFlow Menggunakan PDM**
 1. **Pastikan berada di dalam direktori virtual environment `.venv`:**
     ```bash
     pdm info
@@ -65,11 +65,11 @@ Dataset dibagi menjadi tiga set utama:
     pdm run python -c "import tensorflow as tf; print(tf.version)"
     ```
 
-### Struktur File Proyek
+### **Struktur File Proyek**
 - `app.py`: Berkas aplikasi utama yang berisi rute dan fungsi.
 - `klasifikasi_citra.py`: Berkas penerapan dari model untuk klasifikasi dan tampilan antarmuka web.
 
-### Menjalankan Aplikasi
+### **Menjalankan Aplikasi**
 - Jalankan aplikasi dengan perintah berikut:
     ```bash
     streamlit run ./src/app.py
