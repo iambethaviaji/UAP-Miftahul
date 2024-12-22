@@ -28,6 +28,7 @@ Dataset dibagi menjadi tiga set utama:
 - **Hasil Pelatihan**:
   - Akurasi pelatihan: **87.47%** (epoch ke-20)
   - Akurasi validasi: **99.00%**
+  - Hasil Model: [ModelInceptionV3](https://drive.google.com/file/d/1q7y8px9yYYfsB2eLyjoBSv10nWoGGPUA/view?usp=sharing)
 
 ### **2. MobileNetV2**
 ![MobileNetV2 Architecture](assets/MobileNetv2.png)
@@ -35,6 +36,7 @@ Dataset dibagi menjadi tiga set utama:
 - **Hasil Pelatihan**:
   - Akurasi pelatihan: **87.59%** (epoch ke-20)
   - Akurasi validasi: **99.33%**
+  - Hasil Model: [ModelMobileNetV2](https://drive.google.com/file/d/1CjUoiQp84QHtCKX3nRbz106IzhDlFR41/view?usp=sharing)
 
 ---
 
