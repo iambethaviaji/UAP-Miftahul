@@ -79,16 +79,46 @@ Dataset dibagi menjadi tiga set utama:
 ---
 
 ## 📊 **Evaluasi Model**
-### **1. Hasil Grafik Pelatihan**
-**InceptionV3**: Akurasi model meningkat secara konsisten dari 35.72% (epoch pertama) hingga 87.47% (epoch ke-20) dengan akurasi validasi mencapai 99.00%.  
-**MobileNetV2**: Akurasi pelatihan meningkat dari 38.92% (epoch pertama) hingga 87.59% (epoch ke-20), dengan akurasi validasi stabil di 99.33%.  
 
-### **2. Classification Report**
-Model menunjukkan performa luar biasa dengan **precision**, **recall**, dan **f1-score** mendekati **1.00** pada sebagian besar kelas. Akurasi keseluruhan mencapai **99%**.
+### Evaluasi Model: InceptionV3
 
-### **3. Confusion Matrix**
-- **InceptionV3**: Hampir semua sampel berhasil diklasifikasikan dengan benar. Kesalahan kecil ditemukan, seperti pada kelas "Sea Bass" dengan 3 sampel salah klasifikasi.
-- **MobileNetV2**: Performa yang hampir serupa dengan beberapa kesalahan kecil, seperti pada kelas "Striped Red Mullet".
+#### Hasil Grafik Pelatihan
+Grafik pelatihan untuk model InceptionV3 disimpan dengan nama file `Grafik InceptionV3` di dalam folder `assets`.
+
+Pada proses pelatihan model menggunakan InceptionV3, dimulai dengan menggunakan model yang telah dilatih sebelumnya (pre-trained model) dan melakukan fine-tuning pada dataset khusus. Selama pelatihan, model mengalami peningkatan performa yang signifikan seiring berjalannya waktu. Pada epoch pertama, akurasi model pada data pelatihan tercatat sekitar 35.72%, sementara pada data validasi, akurasi mencapai 90.50%. Meskipun akurasi pada data pelatihan masih rendah, model telah menunjukkan kemampuan yang sangat baik untuk memprediksi data yang belum pernah dilihat sebelumnya (data validasi). Seiring berjalannya pelatihan, akurasi pada data pelatihan terus meningkat, mencapai sekitar 87.47% pada epoch ke-20. Pada saat yang sama, model menunjukkan kinerja yang sangat baik pada data validasi, dengan akurasi mencapai 99.00%. Hal ini menunjukkan bahwa model tidak hanya belajar dari data pelatihan, tetapi juga mampu menggeneralisasi dengan sangat baik terhadap data yang belum pernah dilihat sebelumnya. Meskipun terdapat beberapa fluktuasi kecil dalam nilai akurasi dan loss di antara epoch-epoch tertentu, secara keseluruhan, model mengalami peningkatan yang konsisten.
+
+#### Hasil Classification Report
+Hasil classification report disimpan dengan nama file `Classification InceptionV3` di dalam folder `assets`.
+
+Hasil dari classification report memberikan gambaran menyeluruh tentang performa model klasifikasi pada dataset yang diuji. Dalam laporan ini, terdapat beberapa metrik evaluasi yang penting, yaitu precision, recall, dan f1-score, yang dihitung untuk setiap kelas. Precision mengukur ketepatan prediksi positif yang dilakukan oleh model, yaitu seberapa banyak prediksi yang benar dari seluruh prediksi yang dikategorikan sebagai kelas tersebut. Recall mengukur kemampuan model dalam mendeteksi kelas tersebut, yaitu seberapa banyak data yang sebenarnya termasuk dalam kelas tersebut dapat ditemukan oleh model. F1-score adalah rata-rata harmonik dari precision dan recall, memberikan gambaran umum seberapa baik model secara keseluruhan.
+Kita dapat melihat bahwa sebagian besar kelas memiliki performa yang sangat baik dengan precision, recall, dan f1-score mendekati 1 (nilai terbaik), seperti untuk kelas "Black Sea Sprat", "Shrimp", dan "Trout" yang menunjukkan skor 1.00 untuk ketiga metrik. Hanya kelas "Striped Red Mullet" yang menunjukkan sedikit penurunan pada recall dengan skor 0.94, meskipun precision dan f1-score tetap tinggi. Secara keseluruhan, model ini menunjukkan performa yang luar biasa dengan akurasi 99% pada dataset pengujian, yang berarti model dapat dengan sangat baik membedakan antara kelas-kelas yang ada dalam data. Macro avg dan weighted avg menunjukkan bahwa model secara konsisten memberikan hasil yang seimbang dan berkinerja baik di semua kelas, dengan skor rata-rata hampir mencapai 1.00.
+
+#### Hasil Confusion Matrix
+Hasil confusion matrix disimpan dengan nama file `Confusion InceptionV3` di dalam folder `assets`.
+
+Confusion matrix yang diberikan menggambarkan performa model dalam mengklasifikasikan 9 jenis ikan. Secara keseluruhan, model ini menunjukkan performa yang sangat baik, dengan akurasi yang tinggi dan jumlah kesalahan yang sangat sedikit. Untuk kelas "Black Sea Sprat", model berhasil mengklasifikasikan semua 100 sampel dengan benar. Begitu juga dengan kelas "Hourse Mackerel", "Red Mullet", "Red Sea Bream", "Shrimp", dan "Trout", di mana model berhasil mengklasifikasikan semua sampel tanpa ada kesalahan. Pada kelas "Gilt-Head Bream", model hanya salah mengklasifikasikan 1 sampel yang seharusnya termasuk dalam kelas ini, tetapi malah masuk ke dalam kelas "Red Mullet". Untuk kelas "Sea Bass", 2 sampel salah diklasifikasikan sebagai "Shrimp".
+Kelas "Striped Red Mullet" menunjukkan sedikit penurunan performa dengan 3 sampel yang salah diklasifikasikan sebagai "Gilt-Head Bream" dan 3 sampel lagi yang salah diklasifikasikan sebagai "Red Mullet". Namun, meskipun ada beberapa kesalahan ini, model tetap menunjukkan hasil yang sangat baik secara keseluruhan, dengan tingkat akurasi yang sangat tinggi dan hanya sedikit kesalahan dalam pengklasifikasian. Hasil ini menandakan bahwa model dapat dengan efektif membedakan berbagai jenis ikan dengan performa yang konsisten dan akurat.
+
+---
+
+### Evaluasi Model: MobileNetV2
+
+#### Hasil Grafik Pelatihan
+Grafik pelatihan untuk model MobileNetV2 disimpan dengan nama file `Grafik Mobilenetv2` di dalam folder `assets`.
+
+Pada proses pelatihan model dengan MobileNetV2, model memulai dengan performa yang moderat pada epoch pertama, dengan akurasi pelatihan sekitar 38.92% dan akurasi validasi mencapai 96.67%. Hal ini menunjukkan bahwa meskipun model mulai belajar, ia sudah mampu memprediksi data validasi dengan cukup baik sejak awal. Pada epoch kedua, akurasi pelatihan meningkat pesat menjadi 71.33%, dan akurasi validasi terus meningkat menjadi 97.94%. Peningkatan ini berlanjut stabil sepanjang proses pelatihan.
+Pada epoch ke-5, model menunjukkan akurasi pelatihan sebesar 82.26% dengan akurasi validasi yang masih tinggi, yaitu 98.28%. Puncaknya terjadi pada epoch ke-12, di mana akurasi pelatihan mencapai 87.09% dan akurasi validasi tercatat pada 99.39%. Meskipun ada beberapa fluktuasi kecil pada akurasi dan loss di beberapa epoch berikutnya, model tetap menunjukkan kemampuan generalisasi yang sangat baik pada data validasi. Pada akhir pelatihan (epoch ke-20), akurasi pelatihan mencapai 87.59% dengan akurasi validasi yang stabil di 99.33%. Secara keseluruhan, meskipun terdapat fluktuasi minor, model menunjukkan peningkatan yang konsisten dalam hal akurasi pelatihan dan validasi.
+
+#### Hasil Classification Report
+Hasil classification report untuk MobileNetV2 disimpan dengan nama file `Classi MobileNetv2` di dalam folder `assets`.
+
+Hasil dari classification report menunjukkan bahwa model klasifikasi memiliki kinerja yang sangat baik pada dataset yang diuji. Sebagian besar kelas menunjukkan precision, recall, dan f1-score yang mendekati 1.00, menunjukkan prediksi yang sangat akurat dan kemampuan model untuk mendeteksi kelas dengan baik. Kelas seperti "Black Sea Sprat", "Shrimp", dan "Trout" memiliki skor 1.00 pada ketiga metrik, sementara kelas lainnya, seperti "Gilt-Head Bream", "Horse Mackerel", dan "Red Sea Bream", juga menunjukkan performa yang sangat baik dengan skor hampir 1.00 di semua metrik.
+Meskipun sebagian besar kelas memiliki hasil yang luar biasa, ada beberapa kelas yang sedikit menurun pada recall, seperti pada "Sea Bass" dengan skor 0.97, dan "Striped Red Mullet" dengan skor 0.94, meskipun precision dan f1-score tetap tinggi. Secara keseluruhan, model ini mencapai akurasi 99% pada dataset pengujian, yang menunjukkan kemampuan model untuk membedakan kelas-kelas dengan sangat baik.
+
+#### Hasil Confusion Matrix
+Hasil confusion matrix untuk MobileNetV2 disimpan dengan nama file `Classif MobileNetv2` di dalam folder `assets`.
+
+Secara spesifik, model menunjukkan kinerja yang sangat baik pada setiap kelas. Misalnya, untuk kelas "Black Sea Sprat" dan "Gilt-Head Bream", model berhasil mengklasifikasikan 99 dari 100 sampel dengan benar, dengan hanya 1 kesalahan pada setiap kelas. Kelas lain seperti "Hourse Mackerel", "Red Sea Bream", "Shrimp", "Trout", dan "Striped Red Mullet" juga menunjukkan hasil yang sangat baik, dengan hampir semua sampel diklasifikasikan dengan benar. Namun, kelas "Sea Bass" memiliki sedikit lebih banyak kesalahan, dengan 3 misclassifications, yaitu 2 sebagai "Black Sea Sprat" dan 1 sebagai "Shrimp". Meskipun demikian, kesalahan ini tidak mengurangi kinerja keseluruhan model yang masih sangat efektif dalam membedakan setiap kelas dengan akurasi yang tinggi.
 
 ---
 
